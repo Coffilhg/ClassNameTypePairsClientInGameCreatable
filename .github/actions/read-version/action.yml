@@ -1,0 +1,37 @@
+name: Read the version
+description: >-
+  Reads the Wally version CoffeeBuildr writes into Version.txt, checks that
+  wally.toml has the same one and works the API version back from it.
+
+outputs:
+  wally:
+    description: The Wally version, e.g. 745.0.7451137
+    value: ${{ steps.read.outputs.wally }}
+  api:
+    description: The Roblox API version, e.g. 0.745.0.7451137
+    value: ${{ steps.read.outputs.api }}
+
+runs:
+  using: composite
+  steps:
+    - id: read
+      shell: bash
+      run: |
+        wally_version="$(tr -d '[:space:]' < Version.txt)"
+        if ! [[ "$wally_version" =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+          echo "::error::Version.txt holds '$wally_version', not a Wally version (e.g. 745.0.7451137)"
+          exit 1
+        fi
+        # the reverse of CoffeeBuildr's WallyVersionComply: the Wally major is major * 1000000 + minor
+        head="${BASH_REMATCH[1]}"
+        api_version="$((head / 1000000)).$((head % 1000000)).${BASH_REMATCH[2]}.${BASH_REMATCH[3]}"
+
+        manifest_version="$(sed -nE 's/^version *= *"([^"]+)".*/\1/p' wally.toml | head -n 1)"
+        if [ "$manifest_version" != "$wally_version" ]; then
+          echo "::error::wally.toml has version $manifest_version, but Version.txt has $wally_version"
+          exit 1
+        fi
+
+        echo "wally=$wally_version" >> "$GITHUB_OUTPUT"
+        echo "api=$api_version" >> "$GITHUB_OUTPUT"
+        echo "API@$api_version is Wally@$wally_version"
