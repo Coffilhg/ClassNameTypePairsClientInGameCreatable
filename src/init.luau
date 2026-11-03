@@ -365,8 +365,8 @@ export type ClassNameTypePairsChild = {
 }
 
 export type AccoutrementChild = {
-	["Hat"]: Hat,
 	["Accessory"]: Accessory,
+	["Hat"]: Hat,
 }
 
 export type AccoutrementDescendant = {
@@ -443,11 +443,11 @@ export type MotorLeaf = {
 }
 
 export type PartChild = {
-	["SkateboardPlatform"]: SkateboardPlatform,
-	["SpawnLocation"]: SpawnLocation,
+	["FlagStand"]: FlagStand,
 	["Platform"]: Platform,
 	["Seat"]: Seat,
-	["FlagStand"]: FlagStand,
+	["SkateboardPlatform"]: SkateboardPlatform,
+	["SpawnLocation"]: SpawnLocation,
 }
 
 export type PartDescendant = {
