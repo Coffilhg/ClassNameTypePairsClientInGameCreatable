@@ -18,6 +18,11 @@ concurrency:
 
 jobs:
   publish:
+    # only main's version gets published, even when it's run by hand on another branch
+    if: github.ref == 'refs/heads/main'
+    # WALLY_AUTH_TOKEN is a secret of this environment, which only lets runs on main use it
+    # (Settings > Environments > wally > Deployment branches and tags: main)
+    environment: wally
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
