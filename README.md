@@ -65,10 +65,10 @@ if **Major Version** ever becomes > 0, multiply `its value * 1_000_000` and add 
     ClassNameTypePairsClientInGameCreatable = "coffilhg/classnametypepairsclientingamecreatable@*"
     ```
 <!-- CoffeeBuildr:Rotriever -->
-- **[Rotriever](<https://github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable/releases/tag/v381.0.295409>)**
+- **[Rotriever](<https://github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable/releases/tag/v382.0.297844>)**
 
 	```toml
-	ClassNameTypePairsClientInGameCreatable = "github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable@381.0.295409"
+	ClassNameTypePairsClientInGameCreatable = "github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable@382.0.297844"
 	```
 <!-- /CoffeeBuildr:Rotriever -->
 
