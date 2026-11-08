@@ -67,10 +67,10 @@ in the cases when a version repeats on the **[Roblox Client Tracker](<https://gi
     ClassNameTypePairsClientInGameCreatable = "coffilhg/classnametypepairsclientingamecreatable@*"
     ```
 <!-- CoffeeBuildr:Rotriever -->
-- **[Rotriever](<https://github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable/releases/tag/v674.0.6740785>)**
+- **[Rotriever](<https://github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable/releases/tag/v675.0.6750711>)**
 
 	```toml
-	ClassNameTypePairsClientInGameCreatable = "github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable@674.0.6740785"
+	ClassNameTypePairsClientInGameCreatable = "github.com/Coffilhg/ClassNameTypePairsClientInGameCreatable@675.0.6750711"
 	```
 <!-- /CoffeeBuildr:Rotriever -->
 
