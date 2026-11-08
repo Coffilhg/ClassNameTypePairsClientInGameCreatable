@@ -2,14 +2,15 @@
 
 # Run context: "ClientInGame"
 
-Generated using Version 0.742.0.7421053 of Full-API-Dump.json (<https://github.com/MaximumADHD/Roblox-Client-Tracker/blob/9f5d667ab5662367b1070024833e46eb15a6aa0d/Full-API-Dump.json>)
+Generated using Version 0.743.0.7431133 of Full-API-Dump.json (<https://github.com/MaximumADHD/Roblox-Client-Tracker/blob/0cddacf05b7c228783654dfd97d6533e4874dba0/Full-API-Dump.json>)
 
-The Version is taken from the name of the commit <https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/9f5d667ab5662367b1070024833e46eb15a6aa0d>
+The Version is taken from the name of the commit <https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/0cddacf05b7c228783654dfd97d6533e4874dba0>
 
 ### *Internal Permission is required for this feature.* ~ InternalSyncItem
 ### *ParabolaAdornment may only be instantiated by CoreScripts at this time* ~ ParabolaAdornment
 ### The current thread cannot create '{ClassName}' (lacking capability InternalTest)
 - CustomLog
+- PhysicsActivitySensor
 - RealtimeMedia
 ### *The current thread cannot create '{ClassName}' (lacking capability LocalUser)* ~ DebuggerWatch
 ### The current thread cannot create '{ClassName}' (lacking capability Plugin)
@@ -38,7 +39,6 @@ The Version is taken from the name of the commit <https://github.com/MaximumADHD
 - AdService
 - AnalyticsService
 - AnimatedImageService
-- AnimatedImageTrack
 - AnimationClip
 - AnimationClipProvider
 - AnimationFromVideoCreatorService
@@ -254,6 +254,7 @@ The Version is taken from the name of the commit <https://github.com/MaximumADHD
 - ImportSession
 - IncrementalPatchBuilder
 - InputObject
+- InputReplayService
 - InsertService
 - Instance
 - InstanceAdornment
