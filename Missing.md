@@ -2,10 +2,11 @@
 
 # Run context: "ClientInGame"
 
-Generated using Version 0.562.0.5620360 of API-Dump.json (<https://github.com/MaximumADHD/Roblox-Client-Tracker/blob/f5d12bde1b2d0f455faaa8ee7c33a94d81656bfb/API-Dump.json>)
+Generated using Version 0.563.0.5630392 of Full-API-Dump.json (<https://github.com/MaximumADHD/Roblox-Client-Tracker/blob/0806c2fe0da719525ad31b56248284207b25af03/Full-API-Dump.json>)
 
-The Version is taken from the name of the commit <https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/f5d12bde1b2d0f455faaa8ee7c33a94d81656bfb>
+The Version is taken from the name of the commit <https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/0806c2fe0da719525ad31b56248284207b25af03>
 
+### *Internal Permission is required for this feature.* ~ InternalSyncItem
 ### *ParabolaAdornment may only be instantiated by CoreScripts at this time* ~ ParabolaAdornment
 ### *The current thread cannot create '{ClassName}' (lacking capability LocalUser)* ~ DebuggerWatch
 ### The current thread cannot create '{ClassName}' (lacking capability Plugin)
@@ -168,6 +169,7 @@ The Version is taken from the name of the commit <https://github.com/MaximumADHD
 - InsertService
 - Instance
 - InstanceAdornment
+- InternalSyncService
 - InventoryPages
 - JointInstance
 - JointsService
@@ -224,6 +226,7 @@ The Version is taken from the name of the commit <https://github.com/MaximumADHD
 - PackageUIService
 - Pages
 - PartAdornment
+- PatchMapping
 - Path
 - PathfindingService
 - PausedState
@@ -284,6 +287,7 @@ The Version is taken from the name of the commit <https://github.com/MaximumADHD
 - RunningAverageItemInt
 - RunningAverageTimeIntervalItem
 - RuntimeScriptService
+- SafetyService
 - ScreenshotHud
 - ScriptBuilder
 - ScriptChangeService
@@ -336,6 +340,7 @@ The Version is taken from the name of the commit <https://github.com/MaximumADHD
 - SurfaceGuiBase
 - TaskScheduler
 - TeamCreateData
+- TeamCreatePublishService
 - TeamCreateService
 - Teams
 - TeleportAsyncResult
