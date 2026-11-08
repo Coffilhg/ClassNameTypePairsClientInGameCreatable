@@ -36,7 +36,8 @@ jobs:
           package="$(sed -nE 's/^name *= *"([^"]+)".*/\1/p' wally.toml | head -n 1)"
           # a package that was never published answers with an error, which means "not published"
           metadata="$(curl -sSf "https://api.wally.run/v1/package-metadata/$package" || true)"
-          if grep -q "\"version\":\"${{ steps.version.outputs.wally }}\"" <<< "$metadata"; then
+          # a fixed string with both quotes: 745.0.1 isn't published just because 745.0.1-rc.1 is
+          if grep -qF "\"version\":\"${{ steps.version.outputs.wally }}\"" <<< "$metadata"; then
             echo "published=true" >> "$GITHUB_OUTPUT"
             echo "$package@${{ steps.version.outputs.wally }} is on Wally already, nothing to publish"
           else

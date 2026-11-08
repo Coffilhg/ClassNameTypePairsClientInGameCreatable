@@ -55,6 +55,8 @@ e.g. `0.736.0.7361342` -> `736.0.7361342`
 
 if **Major Version** ever becomes > 0, multiply `its value * 1_000_000` and add with the beginning (the *Minor Version*), e.g. `1.736.0.7361342` -> `1000736.0.7361342` because `1_000_000 + 736 = 1000736`
 
+in the cases when a version repeats on the **[Roblox Client Tracker](<https://github.com/MaximumADHD/Roblox-Client-Tracker>)** and the changes are reasonable to keep they'll be split into the newest one with version of ``V`` and every other one of the same version as ``V-rc.X``, however using ``@*`` or ``^`` for wally dependency version will never pick a pre-release, so if you need it, it must be explicit in your ``wally.toml``
+
 ---
 
 ## Available Here!
